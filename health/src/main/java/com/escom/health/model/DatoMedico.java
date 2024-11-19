@@ -7,13 +7,13 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDate;
 
-@Document(collection = "DatosMedicos")
-public class DatosMedicos {
+@Document(collection = "DatoMedico")
+public class DatoMedico {
 
     @Id
     @Field("_id")
     @NonNull
-    private int idDatosMedicos;
+    private int idDatoMedico;
     private String presionArterial;
     private Integer frecuenciaCardiaca;
     private Double peso;
@@ -22,11 +22,11 @@ public class DatosMedicos {
     private LocalDate fechaMedicion;
     private String medicoResponsable;
 
-    public DatosMedicos() {
+    public DatoMedico() {
     }
 
-    public DatosMedicos(@NonNull int idDatosMedicos, String presionArterial, Integer frecuenciaCardiaca, Double peso, Double altura, Double temperaturaCorporal, LocalDate fechaMedicion, String medicoResponsable) {
-        this.idDatosMedicos = idDatosMedicos;
+    public DatoMedico(@NonNull int idDatoMedico, String presionArterial, Integer frecuenciaCardiaca, Double peso, Double altura, Double temperaturaCorporal, LocalDate fechaMedicion, String medicoResponsable) {
+        this.idDatoMedico = idDatoMedico;
         this.presionArterial = presionArterial;
         this.frecuenciaCardiaca = frecuenciaCardiaca;
         this.peso = peso;
@@ -36,12 +36,12 @@ public class DatosMedicos {
         this.medicoResponsable = medicoResponsable;
     }
 
-    public int getIdDatosMedicos() {
-        return idDatosMedicos;
+    public int getIdDatoMedico() {
+        return idDatoMedico;
     }
 
-    public void setIdDatosMedicos(int idDatosMedicos) {
-        this.idDatosMedicos = idDatosMedicos;
+    public void setIdDatoMedico(int idDatoMedico) {
+        this.idDatoMedico = idDatoMedico;
     }
 
     public String getPresionArterial() {
